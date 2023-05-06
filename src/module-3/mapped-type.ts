@@ -36,3 +36,24 @@ type Area2<T> = {
 }
 
 const area3: Area2<{ name: string, age: number }> = { name: 'masud', age: 23 }
+
+
+
+interface Person6 {
+
+    firstName: string;
+
+    lastName: string;
+
+}
+
+
+
+function fullName<T extends Person6>(person: T): string {
+
+    return `${person.firstName} ${person.lastName}`;
+
+}
+
+
+fullName('masud', 'rana')
