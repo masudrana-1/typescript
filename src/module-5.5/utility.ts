@@ -70,6 +70,7 @@
 
 
 
+
 // type MyObj = Record<string, string>
 type MyObj = Record<'a' | 'b' | 'c', string>
 
